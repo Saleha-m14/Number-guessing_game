@@ -22,11 +22,16 @@ def start_playing(): # function to start the game
     print("Game started!")
     global number_of_guesses
     while number_of_guesses < guess_limit:
-        try:
+
+        try: # check if the user enters a number
             guess = int(input("Guess a number: "))
             number_of_guesses += 1
         except ValueError:
             print("Invalid: You are told to guess a number.")
+        """
+        check if the guess is lower or higher the number.\n
+        Tell the user to guess lower or higher to find the number.
+        """
         if guess > number:
             print("Guess lower!")
         elif guess < number:
@@ -35,6 +40,11 @@ def start_playing(): # function to start the game
             print(f"Hey {username} You won!")
             break          
     else:
+        """
+        If the user guessed three numbers and couldn't find the right number\n
+        The message you failed will display\n
+        Ask the user if the user wanted to play again\n
+        """
         print(f"{username} You Failed!")
         play_again = input("Do you want to play again?(yes/no) ").lower()
         if play_again == "yes":
