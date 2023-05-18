@@ -27,6 +27,14 @@ def start_playing(): # function to start the game
             number_of_guesses += 1
         except ValueError:
             print("Invalid: You are told to guess a number.")
+        if guess > number:
+            print("Guess lower!")
+        elif guess < number:
+            print("Guess higher!")
+        else:
+            print(f"Hey {username} You won!")
+            break 
+
             
     else:
         print(f"{username} You Failed!")
