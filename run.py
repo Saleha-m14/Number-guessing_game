@@ -33,11 +33,15 @@ def start_playing(): # function to start the game
             print("Guess higher!")
         else:
             print(f"Hey {username} You won!")
-            break 
-
-            
+            break          
     else:
         print(f"{username} You Failed!")
+        play_again = input("Do you want to play again?(yes/no) ").lower()
+        if play_again == "yes":
+            number_of_guesses = 0
+            start_playing()
+        else:
+            print("Quiet")
         
         
 if play_game == "yes":
