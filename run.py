@@ -1,3 +1,4 @@
+import random
 
 def greet_user(name): # function to greet user
     if not username.isalpha():
@@ -12,8 +13,20 @@ def greet_user(name): # function to greet user
         print(f"Hello {username}, Lets play a game.")
 username = input("Add Name: ") # input for username
 greet_user(username)
+play_game = input("Do you want to play game?(yes/no) ").lower()
+number = random.randint(0, 100)
+number_of_guesses = 0
+guess_limit = 3
+
+def start_playing():
+    print("Game started!")
+    if number_of_guesses < guess_limit:
+        guess = int(input("Guess a number: "))
 
 
 
 
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+
+
+
+
