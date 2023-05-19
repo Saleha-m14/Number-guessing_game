@@ -1,9 +1,14 @@
 import random
-from colorama import init, Fore, Style
-init()
+import colorama
+from colorama import Fore, Style
+colorama.init(autoreset=True)
 
-
-def greet_user(): # function to greet user
+username = input(f"{Fore.BLUE}Add Name: ") # input for username
+def greet_user():
+    """
+    Check if the name is valid.
+    Greet user using username.
+    """ 
     if not username.isalpha():
         # I need to return back here and check username
         print("Please add a valid name.")
@@ -14,7 +19,7 @@ def greet_user(): # function to greet user
     else:
         print(f"{Fore.YELLOW}Welcome!")
         print(f"Hello {username}, Lets play a game.")
-username = input(f"{Fore.BLUE}Add Name: ") # input for username
+
 greet_user()
 play_game = input(f"{Fore.YELLOW}Do you want to play game?(yes/no) ").lower()
 number = random.randint(0, 100)
@@ -32,7 +37,7 @@ def start_playing(): # function to start the game
         except ValueError:
             print(f"{Fore.RED}Invalid: You are told to guess a number.")
         """
-        check if the guess is lower or higher the number.\n
+        check if the guess is lower or higher the number.
         Tell the user to guess lower or higher to find the number.
         """
         if guess > number:
@@ -44,9 +49,9 @@ def start_playing(): # function to start the game
             break          
     else:
         """
-        If the user guessed three numbers and couldn't find the right number\n
-        The message you failed will display\n
-        Ask the user if the user wanted to play again\n
+        If the user guessed three numbers and couldn't find the right number
+        The message you failed will display
+        Ask the user if the user wanted to play again
         """
         print(f"{Fore.RED}{username} You Failed!")
         play_again = input(f"{Fore.YELLOW}Do you want to play again?(yes/no) ").lower()
