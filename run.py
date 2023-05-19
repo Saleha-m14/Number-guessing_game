@@ -4,6 +4,8 @@ from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 username = input(f"{Fore.BLUE}Add Name: ") # input for username
+
+
 def greet_user():
     """
     Check if the name is valid.
@@ -20,11 +22,13 @@ def greet_user():
         print(f"{Fore.YELLOW}Welcome!")
         print(f"Hello {username}, Lets play a game.")
 
+
 greet_user()
 play_game = input(f"{Fore.YELLOW}Do you want to play game?(yes/no) ").lower()
 number = random.randint(0, 100)
 number_of_guesses = 0
 guess_limit = 3
+
 
 def start_playing(): # function to start the game
     print(f"{Fore.GREEN}Game started!")
@@ -67,6 +71,7 @@ if play_game == "yes":
 elif play_game == "no":
     print("Quiet")
 else:
+    # If the user enter anything other than(yes/no), the this message will display.
     print(f"{Fore.RED}Sorry I don't undrestand that.")
 
 
