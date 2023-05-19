@@ -6,24 +6,20 @@ colorama.init(autoreset=True)
 username = input(f"{Fore.BLUE}Add Name: ") # input for username
 
 
-def greet_user():
-    """
-    Check if the name is valid.
-    Greet user using username.
-    """ 
-    if not username.isalpha():
-        # I need to return back here and check username
-        print("Please add a valid name.")
-    elif len(username) < 3:
-        print("Name should be at least three letters.")
+def greet_user(): # Greet user using username.
+    print(f"{Fore.YELLOW}Welcome!")
+    print(f"Hello {username}, Lets play a game.")
+
+def validate_username(): #Check if the name is valid
+    if len(username) < 3:
+        print("Name should be at least three letters")
     elif len(username) > 30:
         print("User name cannot be more than 30 letters.")
     else:
-        print(f"{Fore.YELLOW}Welcome!")
-        print(f"Hello {username}, Lets play a game.")
+        greet_user()
 
 
-greet_user()
+validate_username()
 play_game = input(f"{Fore.YELLOW}Do you want to play game?(yes/no) ").lower()
 number = random.randint(0, 100)
 number_of_guesses = 0
@@ -72,8 +68,7 @@ elif play_game == "no":
     print("Quiet")
 else:
     # If the user enter anything other than(yes/no), the this message will display.
-    print(f"{Fore.RED}Sorry I don't undrestand that.")
-
+    print(f"{Fore.RED}You typed '{play_game}',I don't undrestand that.\nYou must write yes if you want to play otherwise no.\n")
 
 
 
