@@ -1,43 +1,46 @@
 import random
+from colorama import init, Fore, Style
+init()
+
 
 def greet_user(): # function to greet user
     if not username.isalpha():
         # I need to return back here and check username
-        print("Name cannot be a number.")
+        print("Please add a valid name.")
     elif len(username) < 3:
         print("Name should be at least three letters.")
     elif len(username) > 30:
         print("User name cannot be more than 30 letters.")
     else:
-        print("Welcome!")
+        print(f"{Fore.YELLOW}Welcome!")
         print(f"Hello {username}, Lets play a game.")
-username = input("Add Name: ") # input for username
+username = input(f"{Fore.BLUE}Add Name: ") # input for username
 greet_user()
-play_game = input("Do you want to play game?(yes/no) ").lower()
+play_game = input(f"{Fore.YELLOW}Do you want to play game?(yes/no) ").lower()
 number = random.randint(0, 100)
 number_of_guesses = 0
 guess_limit = 3
 
 def start_playing(): # function to start the game
-    print("Game started!")
+    print(f"{Fore.GREEN}Game started!")
     global number_of_guesses
     while number_of_guesses < guess_limit:
 
         try: # check if the user enters a number
-            guess = int(input("Guess a number: "))
+            guess = int(input(f"{Fore.BLUE}Guess a number: "))
             number_of_guesses += 1
         except ValueError:
-            print("Invalid: You are told to guess a number.")
+            print(f"{Fore.RED}Invalid: You are told to guess a number.")
         """
         check if the guess is lower or higher the number.\n
         Tell the user to guess lower or higher to find the number.
         """
         if guess > number:
-            print("Guess lower!")
+            print(f"{Fore.YELLOW}Guess lower!")
         elif guess < number:
-            print("Guess higher!")
+            print(f"{Fore.YELLOW}Guess higher!")
         else:
-            print(f"Hey {username} You won!")
+            print(f"{Fore.GREEN}Hey {username} You won!")
             break          
     else:
         """
@@ -45,13 +48,13 @@ def start_playing(): # function to start the game
         The message you failed will display\n
         Ask the user if the user wanted to play again\n
         """
-        print(f"{username} You Failed!")
-        play_again = input("Do you want to play again?(yes/no) ").lower()
+        print(f"{Fore.RED}{username} You Failed!")
+        play_again = input(f"{Fore.YELLOW}Do you want to play again?(yes/no) ").lower()
         if play_again == "yes":
             number_of_guesses = 0
             start_playing()
         else:
-            print("Quiet")
+            print(f"{Fore.RED}Quit")
         
         
 if play_game == "yes":
@@ -59,7 +62,7 @@ if play_game == "yes":
 elif play_game == "no":
     print("Quiet")
 else:
-    print("Sorry I don't undrestand that.")
+    print(f"{Fore.RED}Sorry I don't undrestand that.")
 
 
 
