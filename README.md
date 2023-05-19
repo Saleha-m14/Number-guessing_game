@@ -34,9 +34,32 @@ In case if the user failed and wanted to play again can start the game again by 
 + play game questions and guess higher and lower - yellow
 ![yellow texts]()
 
+## Technologies Used
+
+### Languages Used
++ Python
+
+### Python Packages
++ Colorama Text in terminal are shown in different colours.
++ Random returns a random integer
+
+### Tools 
++ Heroku 
 
 
+## Content
 
+The content is written by author.
+
+## Fixed Bugs
+
++ I imported and installed colorama to add color to the texts. But the texts was not in different color I returend back and check my codes if I had truly imported and installed colorama. The issue was solved by installing the colorama(pip install colorama).
++  
+
+
+## Acknowledgements
+
+For inspiration in general and advice, I would like to thank my mentor at Code Institute(Maritna Terlevic).
 
 
 ## Creating the Heroku app
