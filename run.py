@@ -3,6 +3,7 @@ import colorama
 from colorama import Fore, Style
 colorama.init(autoreset=True)
 
+
 username = input(f"{Fore.BLUE}Add Name: ") # input for username
 
 
@@ -36,6 +37,7 @@ def start_playing(): # function to start the game
             number_of_guesses += 1
         except ValueError:
             print(f"{Fore.RED}Invalid: You are told to guess a number.")
+            continue
         """
         check if the guess is lower or higher the number.
         Tell the user to guess lower or higher to find the number.
@@ -65,7 +67,7 @@ def start_playing(): # function to start the game
 if play_game == "yes":
     start_playing()
 elif play_game == "no":
-    print("Quiet")
+    print("Quit")
 else:
     # If the user enter anything other than(yes/no), the this message will display.
     print(f"{Fore.RED}You typed '{play_game}',I don't undrestand that.\nYou must write yes if you want to play otherwise no.\n")
