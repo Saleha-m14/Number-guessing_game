@@ -8,7 +8,7 @@ def greet_user(): # Greet user using username.
     print(f"{Fore.YELLOW}Welcome to Guess Number Game!")
     print("You have three chances to guess the number.")
     
-greet_user   
+greet_user()  
 username = input(f"{Fore.BLUE}Add Name: ") # input for username
 
 
