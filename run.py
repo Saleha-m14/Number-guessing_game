@@ -1,18 +1,20 @@
 import random
 import colorama
 from colorama import Fore, Style
+import sys
 colorama.init(autoreset=True)
 
 
-def greet_user(): # Greet user using username.
+def greet_user():  # Greet user using username.
     print(f"{Fore.YELLOW}Welcome to Guess Number Game!")
     print("You have three chances to guess the number.")
-    
-greet_user()  
-username = input(f"{Fore.BLUE}Add Name: ") # input for username
 
 
-def validate_username(): #Check if the name is valid
+greet_user()
+username = input(f"{Fore.BLUE}Add Name: ").capitalize()  # input for username
+
+
+def validate_username():  # Check if the name is valid
     if len(username) < 3:
         print("Name should be at least three letters")
     elif len(username) > 30:
@@ -28,12 +30,12 @@ number_of_guesses = 0
 guess_limit = 3
 
 
-def start_playing(): # function to start the game
+def start_playing():  # function to start the game
     print(f"{Fore.GREEN}Game started!")
     global number_of_guesses
     while number_of_guesses < guess_limit:
 
-        try: # check if the user enters a number
+        try:  # check if the user enters a number
             guess = int(input(f"{Fore.BLUE}Guess a number: "))
             number_of_guesses += 1
         except ValueError:
@@ -57,25 +59,18 @@ def start_playing(): # function to start the game
         Ask the user if the user wanted to play again
         """
         print(f"{Fore.RED}{username} You Failed!")
-        play_again = input(f"{Fore.YELLOW}Do you want to play again?(yes/no) ").lower()
+        play_again = input("Do you want to play again?(yes/no) ").lower()
         if play_again == "yes":
             number_of_guesses = 0
             start_playing()
         else:
-            print(f"{Fore.RED}Quit")
-        
-        
+            sys.exit(f"{Fore.RED}You said no to play again.")
+
+
 if play_game == "yes":
     start_playing()
 elif play_game == "no":
-    print("Quit")
+    sys.exit(f"{Fore.RED}You said no to play game!")
 else:
-    # If the user enter anything other than(yes/no), the this message will display.
-    print(f"{Fore.RED}You typed '{play_game}',I don't undrestand that.\nYou must write yes if you want to play otherwise no.\n")
-
-
-
-
-
-
-
+    # Anything else instead of yes/no in play_game input
+    print(f"{Fore.RED}You entered {play_game} and I do not undrestand that.")
