@@ -39,8 +39,14 @@ In case if the user failed and wanted to play again can start the game again by 
 ### Languages Used
 + Python
 
+### Python Libraries Used
+
++ [random](https://docs.python.org/3/library/random.html) for integer number 
++ [Clorama](https://pypi.org/project/colorama/) for printing colorful texts
+
+
 ### Python Packages
-+ Colorama Text in terminal are shown in different colours.
++ Colorama Text in the terminal are shown in different colors.
 + Random returns a random integer
 
 ### Tools 
@@ -53,25 +59,11 @@ The content is written by author.
 
 ## Fixed Bugs
 
-+ I imported and installed colorama to add color to the texts. But the texts was not in different color I returend back and check my codes if I had truly imported and installed colorama. The issue was solved by installing the colorama(pip install colorama).
++ I imported and installed Colorama to add color to the texts. But the text was not in a different color I returned and check my codes if I had truly imported and installed Colorama. The issue was solved by installing the Colorama (pip install Colorama). The reason was that I had closed my workspace and opened a new one instead of opening the previous one.
 +  
 
 
 ## Acknowledgements
 
 For inspiration in general and advice, I would like to thank my mentor at Code Institute(Maritna Terlevic).
-
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two build packs from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
 
