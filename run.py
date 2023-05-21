@@ -4,12 +4,13 @@ from colorama import Fore, Style
 colorama.init(autoreset=True)
 
 
+def greet_user(): # Greet user using username.
+    print(f"{Fore.YELLOW}Welcome to Guess Number Game!")
+    print("You have three chances to guess the number.")
+    
+greet_user   
 username = input(f"{Fore.BLUE}Add Name: ") # input for username
 
-
-def greet_user(): # Greet user using username.
-    print(f"{Fore.YELLOW}Welcome!")
-    print(f"Hello {username}, Lets play a game.")
 
 def validate_username(): #Check if the name is valid
     if len(username) < 3:
@@ -17,7 +18,7 @@ def validate_username(): #Check if the name is valid
     elif len(username) > 30:
         print("User name cannot be more than 30 letters.")
     else:
-        greet_user()
+        print(f"Hello {username}, Lets play a game.")
 
 
 validate_username()
