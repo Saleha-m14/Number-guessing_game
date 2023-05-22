@@ -77,4 +77,4 @@ elif play_game == "no":
     sys.exit("You said no to play game!")
 else:
     # Anything else instead of yes/no in play_game input
-    print(f"{Fore.RED}Sorry, I don't undrestand '{play_again}'.")
+    print(f"{Fore.RED}Sorry, I don't undrestand '{play_game}'.")
