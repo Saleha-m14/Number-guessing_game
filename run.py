@@ -7,7 +7,7 @@ colorama.init(autoreset=True)
 
 def greet_user():  # Greet user using username.
     print(f"{Fore.YELLOW}Welcome to Guess Number Game!")
-    print("You have three chances to guess the number.")
+    print("Lets find the secret number.")
 
 
 greet_user()
@@ -20,13 +20,14 @@ def validate_username():  # Check if the name is valid
     elif len(username) > 30:
         print(f"{Fore.RED}Name cannot be more than 30 letters.")
     else:
-        print(f"Hello {username}, Lets play a game.")
+        print(f"Hello {username}, lets find the secret number.")
+        print(f"{username}, you have three chances to find the number.")
         
 
 
 validate_username()
 play_game = input("Do you want to play game?(yes/no) ").lower()
-number = random.randint(0, 100)
+number = random.randint(0, 101)
 number_of_guesses = 0
 guess_limit = 3
 
@@ -40,7 +41,7 @@ def start_playing():  # function to start the game
             guess = int(input(f"{Fore.BLUE}Guess a number: "))
             number_of_guesses += 1
         except ValueError:
-            print(f"{Fore.RED}Invalid: You are told to guess a number.")
+            print(f"{Fore.RED}Invalid: Please write a number.")
             continue
         """
         check if the guess is lower or higher the number.
@@ -52,7 +53,7 @@ def start_playing():  # function to start the game
             print(f"{Fore.YELLOW}Guess higher!")
         else:
             print(f"{Fore.GREEN}Hey {username} You won!")
-            break          
+             
     else:
         """
         If the user guessed three numbers and couldn't find the right number
@@ -67,7 +68,7 @@ def start_playing():  # function to start the game
         else:
             sys.exit(f"{Fore.RED}You said no to play again.")
 
-
+  
 if play_game == "yes":
     start_playing()
 elif play_game == "no":

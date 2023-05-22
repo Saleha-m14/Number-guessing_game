@@ -72,14 +72,14 @@ The content is written by author.
 
 After writing any code I tested it in the terminal to see if the code works as it should. Furthermore, I tested the deployed site to see if it works.
 
-I used [pep8](https://pep8ci.herokuapp.com/) to test the codes.
+I used [pep8](https://pep8ci.herokuapp.com/) to test the codes. Only one error(54: W291 trailing whitespace) was found.
 
-![pep8](images/pep8.png)
+![pep8](images/testing.png)
 
 ## Fixed Bugs
 
 + I imported and installed Colorama to add color to the texts. But the text was not in a different color I returned and check my codes if I had truly imported and installed Colorama. The issue was solved by installing the Colorama (pip install Colorama). The reason was that I had closed my workspace and opened a new one instead of opening the previous one.
-+  
++ 
 
 ## Deplyment
 
@@ -97,9 +97,16 @@ These are the deployment steps:
 9.Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
 10. When your project is deployed you can open it simply by clicking "View".
 
+## Credits
 
+[How to print colored text in python](https://www.youtube.com/watch?v=u51Zjlnui4Y) 
+This tutorial helped me learn how to print colorful texts in Python.
 
-## Acknowledgements
+I was inspired to create this game after watching this video.[Building a Guessing Game](https://youtu.be/B9ORjeQlPOA)
+
+[Number Guessing Game](https://www.youtube.com/watch?v=B2tviDGFq84&t=62s) was very helpful for me and inspired me to check the guess compare it to the number and let the user know if the guess is higher or lower than number.
+
+## Special Thanks
 
 For inspiration in general and advice, I would like to thank my mentor at Code Institute(Maritna Terlevic).
 
