@@ -4,7 +4,7 @@
 
 This is a simple game that is created using python and run in the Terminal. The user is asked to add a name and after adding name the user decides whether to play the game or not by tying(yes/no). The user has three chances to guess the number. The user will win the game if find the number using three chances otherwise the user will lose.
  
-Link to deployed project- 
+Link to deployed project- https://guess-number.herokuapp.com/
 
 ## How to play
 
@@ -56,13 +56,13 @@ In case if the user failed and wanted to play again can start the game again by 
 
 + Colorama Text in the terminal are shown in different colors.
 + Random returns a random integer
++ Sys - to exit
 
 ### Tools 
 
 + Gitpod - to create my file and style it before pushing to GitHub
 + Github - to create a repository and store it
 + Heroku - to connect with Github and deploy the project 
-+ Sys - to exit
 
 ## Content
 
@@ -91,10 +91,10 @@ These are the deployment steps:
 3. On the new page click on "settings" and select Config Var, type PORT in key with a value of 8000.
 4. Click "Add buildpack", select Python and click "Save Changes".
 5. Select NodeJS and click save again. The order is important the Python should be on the top of NodeJS.
-6.Click on "Deploy" tab.
+6. Click on "Deploy" tab.
 7. Select "Github" as deployment method.
-8.Search for your repository name and click connect.
-9.Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
+8. Search for your repository name and click connect.
+9. Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
 10. When your project is deployed you can open it simply by clicking "View".
 
 ## Credits
