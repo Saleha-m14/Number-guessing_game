@@ -28,6 +28,9 @@ In case if the user failed and wanted to play again can start the game again by 
 + Welcome message and guess higher and lower - YELLOW
 ![yellow texts](images/inputs.png)
 
++ Game Started message - GREEN
+![Game Started](images/start-game.png)
+
 + Errors and failed message - RED
 ![Errors](images/errors.png )
 
@@ -59,10 +62,19 @@ In case if the user failed and wanted to play again can start the game again by 
 + Gitpod - to create my file and style it before pushing to GitHub
 + Github - to create a repository and store it
 + Heroku - to connect with Github and deploy the project 
++ Sys - to exit
 
 ## Content
 
 The content is written by author.
+
+## Testing
+
+After writing any code I tested it in the terminal to see if the code works as it should. Furthermore, I tested the deployed site to see if it works.
+
+I used [pep8](https://pep8ci.herokuapp.com/) to test the codes.
+
+![pep8](images/pep8.png)
 
 ## Fixed Bugs
 
