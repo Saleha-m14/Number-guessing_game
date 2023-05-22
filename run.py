@@ -65,14 +65,16 @@ def start_playing():  # function to start the game
         if play_again == "yes":
             number_of_guesses = 0
             start_playing()
+        elif play_again == "no":
+            sys.exit("You said no to play again.")
         else:
-            sys.exit(f"{Fore.RED}You said no to play again.")
+            print(f"{Fore.RED}Sorry, I don't undrestand '{play_again}'.")
 
-  
+
 if play_game == "yes":
     start_playing()
 elif play_game == "no":
-    sys.exit(f"{Fore.RED}You said no to play game!")
+    sys.exit("You said no to play game!")
 else:
     # Anything else instead of yes/no in play_game input
-    print(f"{Fore.RED}You entered {play_game} and I do not undrestand that.")
+    print(f"{Fore.RED}Sorry, I don't undrestand '{play_again}'.")
