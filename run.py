@@ -21,6 +21,7 @@ def validate_username():  # Check if the name is valid
         print(f"{Fore.RED}Name cannot be more than 30 letters.")
     else:
         print(f"Hello {username}, Lets play a game.")
+        
 
 
 validate_username()

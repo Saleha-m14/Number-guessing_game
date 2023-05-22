@@ -17,7 +17,6 @@ If yes then the game starts and the user has three chances to guess the number. 
 + Reads user input
 + Validate input
 + Rising errors
-+ Manipulate data
 
 The user inputs are validated and if the user add any invalid input then the feedback is provided to let the user realize where the problem is.
 In case if the user failed and wanted to play again can start the game again by typing answer yes(Do you want to play again?).
@@ -26,19 +25,22 @@ In case if the user failed and wanted to play again can start the game again by 
 
 **Colours**
 
-+ Welcome message and guess higher and lower - yellow
++ Welcome message and guess higher and lower - YELLOW
 ![yellow texts](images/inputs.png)
+
++ Errors and failed message - RED
+![Errors](images/errors.png )
+
 + inputs - BLUE
 ![inputs colours](images/inputs.png)
 
-+Errors and failed message - RED
-![Errors]()
-
-
++ Play game and play again - White
+![Questions](images/questions.png)
 
 ## Technologies Used
 
 ### Languages Used
+
 + Python
 
 ### Python Libraries Used
@@ -48,12 +50,15 @@ In case if the user failed and wanted to play again can start the game again by 
 
 
 ### Python Packages
+
 + Colorama Text in the terminal are shown in different colors.
 + Random returns a random integer
 
 ### Tools 
-+ Heroku 
 
++ Gitpod - to create my file and style it before pushing to GitHub
++ Github - to create a repository and store it
++ Heroku - to connect with Github and deploy the project 
 
 ## Content
 
