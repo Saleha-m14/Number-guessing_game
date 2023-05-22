@@ -25,14 +25,16 @@ In case if the user failed and wanted to play again can start the game again by 
 ## Design
 
 **Colours**
+
++ Welcome message and guess higher and lower - yellow
+![yellow texts](images/inputs.png)
 + inputs - BLUE
-![inputs colours]()
+![inputs colours](images/inputs.png)
 
 +Errors and failed message - RED
 ![Errors]()
 
-+ play game questions and guess higher and lower - yellow
-![yellow texts]()
+
 
 ## Technologies Used
 

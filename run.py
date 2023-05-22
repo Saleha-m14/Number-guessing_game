@@ -16,9 +16,9 @@ username = input(f"{Fore.BLUE}Add Name: ").capitalize()  # input for username
 
 def validate_username():  # Check if the name is valid
     if len(username) < 3:
-        print("Name should be at least three letters")
+        print(f"{Fore.RED}Name should be at least three letters")
     elif len(username) > 30:
-        print("User name cannot be more than 30 letters.")
+        print(f"{Fore.RED}Name cannot be more than 30 letters.")
     else:
         print(f"Hello {username}, Lets play a game.")
 
