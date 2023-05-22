@@ -1,6 +1,6 @@
 # **Guess Number Game**
 
-![Guess Number Game]()
+![Guess Number Game](images/guess_number.png)
 
 This is a simple game that is created using python and run in the Terminal. The user is asked to add a name and after adding name the user decides whether to play the game or not by tying(yes/no). The user has three chances to guess the number. The user will win the game if find the number using three chances otherwise the user will lose.
  
@@ -61,6 +61,23 @@ The content is written by author.
 
 + I imported and installed Colorama to add color to the texts. But the text was not in a different color I returned and check my codes if I had truly imported and installed Colorama. The issue was solved by installing the Colorama (pip install Colorama). The reason was that I had closed my workspace and opened a new one instead of opening the previous one.
 +  
+
+## Deplyment
+
+This project is deployed using [Heroku](https://www.heroku.com/github-students) and following the instruction of deployment video of Course Institue. 
+These are the deployment steps:
+
+1. Open Heroku and click on "Create New App".
+2. Write your app name and select region. You should give your app a unique name.
+3. On the new page click on "settings" and select Config Var, type PORT in key with a value of 8000.
+4. Click "Add buildpack", select Python and click "Save Changes".
+5. Select NodeJS and click save again. The order is important the Python should be on the top of NodeJS.
+6.Click on "Deploy" tab.
+7. Select "Github" as deployment method.
+8.Search for your repository name and click connect.
+9.Make sure that "main" branch is selected and click on "Enable Automatic Deploys" then, click on "Deploy Branch".
+10. When your project is deployed you can open it simply by clicking "View".
+
 
 
 ## Acknowledgements

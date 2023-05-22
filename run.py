@@ -24,7 +24,7 @@ def validate_username():  # Check if the name is valid
 
 
 validate_username()
-play_game = input(f"{Fore.YELLOW}Do you want to play game?(yes/no) ").lower()
+play_game = input("Do you want to play game?(yes/no) ").lower()
 number = random.randint(0, 100)
 number_of_guesses = 0
 guess_limit = 3
