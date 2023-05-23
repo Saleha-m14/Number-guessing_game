@@ -74,7 +74,7 @@ After writing any code I tested it in the terminal to see if the code works as i
 
 I used [pep8](https://pep8ci.herokuapp.com/) to test the codes. No errors were found.
 
-![pep8](images/pep8 testing.png)
+![pep8 testing](images/pep8%20testing.png)
 
 ## Fixed Bugs
 
