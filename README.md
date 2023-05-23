@@ -72,14 +72,13 @@ The content is written by author.
 
 After writing any code I tested it in the terminal to see if the code works as it should. Furthermore, I tested the deployed site to see if it works.
 
-I used [pep8](https://pep8ci.herokuapp.com/) to test the codes. Only one error(54: W291 trailing whitespace) was found.
+I used [pep8](https://pep8ci.herokuapp.com/) to test the codes. No errors were found.
 
-![pep8](images/testing.png)
+![pep8](images/pep8 testing.png)
 
 ## Fixed Bugs
 
 + I imported and installed Colorama to add color to the texts. But the text was not in a different color I returned and check my codes if I had truly imported and installed Colorama. The issue was solved by installing the Colorama (pip install Colorama). The reason was that I had closed my workspace and opened a new one instead of opening the previous one.
-+ 
 
 ## Deplyment
 
